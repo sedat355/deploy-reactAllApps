@@ -1,9 +1,12 @@
 {
+  "homepage": "https://sedat355/github.io/deploy-reactAllApps",
   "name": "react-all-apps",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "server": "json-server --watch ./data/db.json -p 3000",
     "build": "vite build",
@@ -15,6 +18,7 @@
     "@reduxjs/toolkit": "^2.2.5",
     "axios": "^1.7.2",
     "classnames": "^2.5.1",
+    "gh-pages": "^6.1.1",
     "json-server": "^1.0.0-beta.1",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
